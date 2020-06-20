@@ -2,6 +2,7 @@
 #include <avr/io.h>
 #include "MyBluetooth.h"
 #include "MYDC.h"
+#include "MYServo.h"
 
 int main(void)
 {
