@@ -16,23 +16,24 @@ int main(void)
 	while (1) 
     {
 		rx_txt = bluetooth_Rx();
-		switch(rx_txt)
+		if(rx_txt == "1")
 		{
-			case "1":
-				DC_Motor(30);
-				toggle = 1;
-				break;
-			case "2":
-				DC_Motor(60);
-				toggle = 2;
-				break;
-			case "3":
-				DC_Motor(100);
-				toggle = 3;
-				break;
-			case "4":
-				toggle = 4;
-				break;
+			DC_Motor(30);
+			toggle = 1;
+		}
+		else if(rx_txt == "2")
+		{
+			DC_Motor(60);
+			toggle = 2;
+		}
+		else if(rx_txt == "3")
+		{
+			DC_Motor(100);
+			toggle = 3;
+		}
+		else if(rx_txt == "4")
+		{
+			toggle = 4;
 		}
 		
 		while(!(UCSR1A & 0x80))
