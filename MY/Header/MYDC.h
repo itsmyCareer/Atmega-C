@@ -3,6 +3,6 @@
 
 
 void DC_INIT(void);
-void DC_Motor(int speed);
+void DC_Motor(int);
 
 #endif /* MYDC_H_ */
