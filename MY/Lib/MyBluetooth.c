@@ -1,4 +1,6 @@
-﻿void bluetooth_Init(void)
+﻿#include <avr/io.h>
+
+void bluetooth_Init(void)
 {
 	UCSR0A = 0x00;
 	UCSR0B = 0x98;

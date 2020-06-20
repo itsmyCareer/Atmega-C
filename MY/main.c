@@ -1,18 +1,26 @@
-/*
- * MY.c
- *
- * Created: 2020-06-20 오후 3:33:08
- * Author : itsnt
- */ 
-
+#define F_CPU 16000000UL
 #include <avr/io.h>
-
+#include "MyBluetooth.h"
 
 int main(void)
 {
-    /* Replace with your application code */
+	char rx_txt;
+	bluetooth_Init();
+	
     while (1) 
     {
+		rx_txt = bluetooth_Rx();
+		switch(rx_txt)
+		{
+			case "1":
+				break;
+			case "2":
+				break;
+			case "3":
+				break;
+			case "4":
+				break;
+		}
     }
 }
 
