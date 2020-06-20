@@ -9,6 +9,7 @@ int main(void)
 	char rx_txt;
 	bluetooth_Init();
 	DC_INIT();
+	Servo_INIT();
     while (1) 
     {
 		rx_txt = bluetooth_Rx();
@@ -26,6 +27,7 @@ int main(void)
 			case "4":
 				break;
 		}
+
     }
 }
 

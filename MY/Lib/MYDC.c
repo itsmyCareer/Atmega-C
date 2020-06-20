@@ -3,7 +3,7 @@
 
 void DC_INIT(void)
 {
-	DDRB=0x60;			// PINB5, 6
+	DDRB|=0x60;			// PINB5, 6
 	TCCR1A=0x82;
 	TCCR1B=0x1A;
 	OCR1A=0;

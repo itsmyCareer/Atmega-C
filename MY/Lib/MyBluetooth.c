@@ -2,7 +2,6 @@
 
 void bluetooth_Init(void)
 {
-	DDRE = 0x08;
 	UCSR0A = 0x00;
 	UCSR0B = 0x98;
 	UCSR0C = 0x06;

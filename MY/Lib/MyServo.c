@@ -7,6 +7,7 @@ void Servo_INIT(void)
 	ICR3 = 4999; // ICR1 set to TOP
 	OCR3A = 375; // 0 degree
 	TCNT3 = 0X00; // Strating point
+   	DDRE = 0x08;
 }
 //125 ~ 725
 void Servo_Motor(int degree)
