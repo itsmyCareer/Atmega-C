@@ -36,15 +36,15 @@ int main(void)
 			toggle = 4;
 		}
 		
-		while(!(UCSR1A & 0x80))
-		{
-			if(toggle != 4)
-			{
-				Servo_Motor(cnt++);
-				_delay_ms(4);
-				if(cnt > 725)	cnt = 125;
-			}
-		}
+		//while(!(UCSR1A & 0x80))
+		//{
+		//	if(toggle != 4)
+		//	{
+		//		Servo_Motor(cnt++);
+		//		_delay_ms(4);
+		//		if(cnt > 725)	cnt = 125;
+		//	}
+		//}
     }
 
 }
